@@ -1,9 +1,9 @@
 # Flight Tracker
 ## Get flight info from CLI
 Get some info of the closest flight that you may see taking off in real time!
-###### _Who knows maybe it's the aircraft you've just seen from your window_
+###### _Who knows maybe it's the flight you've just seen from your office window or something..._
 
-This simple CLI application gives you a cool user interface that brings you information about the closest aircraft that is taking off in real time.
+This simple CLI application gives you a cool terminal interface that brings you information about the closest aircraft that is taking off in real time.
 
 ## Verbosity levels
 
