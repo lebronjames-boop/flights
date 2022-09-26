@@ -86,7 +86,7 @@ def print_output(flight_info, verbosity_level) -> _void:
     airport_info = get_airport_info(flight_info['arr_iata'])
     dest_info = get_destination_info_by_iso(airport_info['country'])
 
-    full_destination = f'Destination: {airport_info["city"]}, {dest_info.name}, {(airport_info["name"] if verbosity_level > 0 else "")}'
+    full_destination = f'Destination: {airport_info["city"]}, {dest_info.name} {(", " + (airport_info["name"]) if verbosity_level > 0 else "")}'
     flight_iata_repr = flight_info['dep_iata'] + ' -> ' + flight_info['arr_iata']
     print(text2art(flight_info['flight_icao'], font="colossal") + (full_destination if verbosity_level == 0 else f'{flight_iata_repr}\n{full_destination}'))
 
@@ -111,6 +111,9 @@ def print_output(flight_info, verbosity_level) -> _void:
             print('Flight distance:', get_flight_distance(flight_info['arr_iata']))
 
     print()  #  Empty line at the end
+
+    if verbosity_level > 1:
+        print('GitHub: https://github.com/lebronjames-boop/flights\n')
 
 def main():
     parser = argparse.ArgumentParser(

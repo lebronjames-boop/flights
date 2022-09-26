@@ -1,5 +1,5 @@
 # Flight Tracker
-## Get flight info from cli
+## Get flight info from CLI
 Get some info of the closest flight that you may see taking off in real time!
 ###### _Who knows maybe it's the aircraft you've just seen from your window_
 
@@ -11,9 +11,12 @@ Flight tracker supports three levels of verbosity. Each level includes the previ
 
 | Info | Verbosity levels
 | ------ | ------ |
-| Destination | -v |
-| GitHub | [plugins/github/README.md][PlGh] |
-| Google Drive | [plugins/googledrive/README.md][PlGd] |
-| OneDrive | [plugins/onedrive/README.md][PlOd] |
-| Medium | [plugins/medium/README.md][PlMe] |
-| Google Analytics | [plugins/googleanalytics/README.md][PlGa] |
+| Enormous flight number | Always |
+| Destination | Always, <b>adding airport name on -v</b> |
+| IATA representation (e.g TLV -> XYZ)| -v |
+| Airline company | Always |
+| Speed | Always |
+| Altitude | -v |
+| Flight time | -v |
+| Flight distance | -v |
+| Github link | -vv
